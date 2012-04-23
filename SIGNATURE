@@ -1,0 +1,42 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.64.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 7ac4dae6359961e04e1dba509dfdc9acc5e030db Changes
+SHA1 0433bbff935245e9752d7633fe7caea3ef6c8187 LICENSE
+SHA1 60d0d3f9f847eea85f8d9185ead01b552e338a5e MANIFEST
+SHA1 b98aca0f622a15f95559ca0cdd677e79c44f0d25 META.json
+SHA1 7a4a9b2431fef49cca93c05cb7411ae984bfb77c META.yml
+SHA1 763e7712f3cded510028e63ec11a87f4220e648a Makefile.PL
+SHA1 47696d3a8d5d37186a42b6eb857749660e6e4ee9 README.md
+SHA1 2f957afaa86feaed371efd196b4f89a836a67b73 bin/mesoderm
+SHA1 4cd54f769fd6db5e90f3114119d5238773edd497 dist.ini
+SHA1 98c0f4db90141540c5e738642f9daa8bdf9d9ea5 lib/Mesoderm.pm
+SHA1 c0067faf682b69d117e20b3c71b9700216a454b4 lib/Mesoderm/Command.pm
+SHA1 f90374a9f168f99d4019cc3910ad5eed1b18fe63 lib/Mesoderm/Component.pm
+SHA1 31e03b7d48ae452b418946653f7fd525f8329271 lib/Mesoderm/Mapping.pm
+SHA1 ade5775f7a2e3ace694be2adcd083dc6fa2dd01f lib/Mesoderm/Relationship.pm
+SHA1 85630ed0a3557e8225527d7e86e374084b43844c t/tests.t
+SHA1 96ab1fcd11e902dea8097a826691a7abfbb49656 t/tests/belongs_to.out
+SHA1 2d2c3ba2444fd8f8ce220bcfc567109c7ff172f3 t/tests/belongs_to.sql
+SHA1 82bdff45f5038c21ac731012c351d2015e0e188a t/tests/might_have.out
+SHA1 064a27fab5e336d512d250fb515649c2c6a53ff8 t/tests/might_have.sql
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (Darwin)
+
+iEYEARECAAYFAk+V63sACgkQR0BL4gbYw3S7+gCfYskMBMbjPQEUGpPdn0ZFA7DD
+Q3EAniA3J2qdaJdtsxV/xf4noEvdbSmP
+=HeZd
+-----END PGP SIGNATURE-----
