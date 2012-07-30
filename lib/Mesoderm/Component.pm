@@ -3,7 +3,7 @@
 
 package Mesoderm::Component;
 {
-  $Mesoderm::Component::VERSION = '0.121140';
+  $Mesoderm::Component::VERSION = '0.122120';
 }
 use Moose;
 

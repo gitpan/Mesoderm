@@ -68,9 +68,6 @@ has 't1' => (
   );
   __PACKAGE__->set_primary_key(qw/ id /);
   __PACKAGE__->add_unique_constraint( name => [qw/ name /]);
-  __PACKAGE__->has_many( t2s => 'Schema::T2',{
-    'foreign.t' => 'self.name'
-  });
   { package Schema::ResultSet::T1;
     use Moose;
     extends 'DBIx::Class::ResultSet';
@@ -79,57 +76,6 @@ has 't1' => (
   }
   __PACKAGE__->resultset_class('Schema::ResultSet::T1');
   Schema::_dbic->register_class( t1 => __PACKAGE__ );
-}
-
-##
-## Table: t2
-##
-
-has 't2' => (
-  is      => 'ro',
-  lazy    => 1,
-  isa     => 'Schema::ResultSet::T2',
-  default => sub { shift->dbic->resultset('t2'); },
-);
-
-{
-  package Schema::T2;
-  use Moose;
-  extends 'DBIx::Class';
-
-  __PACKAGE__->load_components(qw/ Core /);
-
-  with 'Schema::_mesoderm';
-  no Moose;
-
-  __PACKAGE__->table('t2');
-  __PACKAGE__->add_columns(
-    id => {
-      data_type => 'INT',
-      default_value => undef,
-      is_auto_increment => 1,
-      is_nullable => 0,
-      size => 11
-    },
-    t => {
-      data_type => 'VARCHAR',
-      default_value => undef,
-      is_nullable => 1,
-      size => 40
-    },
-  );
-  __PACKAGE__->set_primary_key(qw/ id /);
-  __PACKAGE__->might_have( t1 => 'Schema::T1',{
-    'foreign.name' => 'self.t'
-  });
-  { package Schema::ResultSet::T2;
-    use Moose;
-    extends 'DBIx::Class::ResultSet';
-    with 'Schema::_mesoderm';
-    no Moose;
-  }
-  __PACKAGE__->resultset_class('Schema::ResultSet::T2');
-  Schema::_dbic->register_class( t2 => __PACKAGE__ );
 }
 
 

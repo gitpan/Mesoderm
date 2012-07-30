@@ -16,5 +16,7 @@ lib/Mesoderm/Relationship.pm
 t/tests.t
 t/tests/belongs_to.out
 t/tests/belongs_to.sql
+t/tests/index_prefix.out
+t/tests/index_prefix.sql
 t/tests/might_have.out
 t/tests/might_have.sql
