@@ -24,4 +24,4 @@ requires:
   SQL::Translator: 0.11008
 resources:
   repository: git://github.com/gbarr/Mesoderm.git
-version: 0.122120
+version: 0.122290

@@ -3,7 +3,7 @@
 
 package Mesoderm::Command;
 {
-  $Mesoderm::Command::VERSION = '0.122120';
+  $Mesoderm::Command::VERSION = '0.122290';
 }
 use Moose;
 with 'MooseX::Getopt';

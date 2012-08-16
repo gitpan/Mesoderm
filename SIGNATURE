@@ -14,31 +14,31 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 1ad0e82d89cae9e3e28793d6432a8906115b4d88 Changes
+SHA1 1f4ea2bf136285e462419d27d1719a488fced4eb Changes
 SHA1 0433bbff935245e9752d7633fe7caea3ef6c8187 LICENSE
 SHA1 400184b660dfe44acfe5497f1d79290a73e4da83 MANIFEST
-SHA1 95c52e86070af92703a30d7cef7c91d57b1def09 META.json
-SHA1 cf44d94c639dc3bb1a59d7719b20afaccbe4391f META.yml
-SHA1 bcafa077305dcc5c3e6be161d9880c29c7ed74d6 Makefile.PL
+SHA1 04dddafb34bd40db31dfc7fbc85df5d0535808d8 META.json
+SHA1 d07438fbd7ce985aec7802b58afe19059991a5fe META.yml
+SHA1 01db40da17a524a473b9e5397ed8d21275fd104a Makefile.PL
 SHA1 47696d3a8d5d37186a42b6eb857749660e6e4ee9 README.md
 SHA1 2f957afaa86feaed371efd196b4f89a836a67b73 bin/mesoderm
 SHA1 4cd54f769fd6db5e90f3114119d5238773edd497 dist.ini
-SHA1 652512f01e33aeb8e3ed5ba69bf1cdb549180a5a lib/Mesoderm.pm
-SHA1 849be43dbb5818413ce010bf3e74c6e4e729dc8b lib/Mesoderm/Command.pm
-SHA1 f04ca436b47d5f19fc02aae665f6bbb32682acb6 lib/Mesoderm/Component.pm
-SHA1 2b4d791ab1e99724bc54e7ec3f6e05c41ccfcef1 lib/Mesoderm/Mapping.pm
-SHA1 f1d4685937b5f6a69bd42774d8819c7ad5d3c841 lib/Mesoderm/Relationship.pm
+SHA1 a04e03c7af89f696e683f6ba16f22a4725045c23 lib/Mesoderm.pm
+SHA1 6c8d0100b0eb2ac9cc9ed07681b9ae906db821a5 lib/Mesoderm/Command.pm
+SHA1 d561ab19ff7f83fea1da7189cab49ea7a743957a lib/Mesoderm/Component.pm
+SHA1 d5d2366be20fab02dbd7ece8d4d4b677a4588975 lib/Mesoderm/Mapping.pm
+SHA1 b0f67c1e860d4e3f0194903101101a2bf8088ce7 lib/Mesoderm/Relationship.pm
 SHA1 85630ed0a3557e8225527d7e86e374084b43844c t/tests.t
-SHA1 feea7bbf6a1912bc4a45dac70788eb3f53a43b87 t/tests/belongs_to.out
+SHA1 4625d336e4125e86d95ae00b098f8db8cd51b8cb t/tests/belongs_to.out
 SHA1 2d2c3ba2444fd8f8ce220bcfc567109c7ff172f3 t/tests/belongs_to.sql
-SHA1 52567d1794d5336b4abcecc1eb800b9f5ae4927e t/tests/index_prefix.out
+SHA1 3e6a67b130c1b413ef24fc41a0008f899abb95a8 t/tests/index_prefix.out
 SHA1 593f8c8ab8299b0fa7ddce5cd96cb0fcfffb2ba3 t/tests/index_prefix.sql
-SHA1 611e892a04e046a02b99577990516cbfb200a950 t/tests/might_have.out
+SHA1 fa829bb4f16545ffdfcbc98caadb32a362289488 t/tests/might_have.out
 SHA1 064a27fab5e336d512d250fb515649c2c6a53ff8 t/tests/might_have.sql
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
-iEYEARECAAYFAlAW8JsACgkQR0BL4gbYw3ScJQCcDhuVyWTs/SbZE8JEo7LnWOx9
-hHUAmgPgKKBqP9dqZwB8SzYjaaIP0Z1u
-=U5xB
+iEYEARECAAYFAlAtemUACgkQR0BL4gbYw3R0xwCdEFbDQ1iq2YuTYsvYhNKGAX1w
+E2kAn14uq/m67+RQ2ZN2iP1Ld5/pfUe6
+=wfQl
 -----END PGP SIGNATURE-----
