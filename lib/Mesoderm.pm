@@ -4,7 +4,7 @@
 
 package Mesoderm;
 {
-  $Mesoderm::VERSION = '0.122290';
+  $Mesoderm::VERSION = '0.131260';
 }
 use Moose;
 
@@ -90,6 +90,7 @@ sub table_components {
 }
 
 sub column_components { my ($self, $column) = @_; return; }    # TODO
+sub resultset_components { return; }
 
 sub table_roles {
   my ($self, $table) = @_;
@@ -523,6 +524,17 @@ sub write_table {
   print $fh "    extends 'DBIx::Class::ResultSet';\n";
   print $fh "    with qw(",join("\n      ","",$self->resultset_roles($table), $mesoderm_role ,");\n");
   print $fh "    no Moose;\n";
+
+  my @rs_comp =
+    sort { $a->order <=> $b->order or $a->name cmp $b->name }
+    map { Mesoderm::Component->find($_) }
+    $self->resultset_components($table);
+
+  if (@rs_comp) {
+    my $list = join " ", map { $_->name } @rs_comp;
+    print $fh "\n";
+    print $fh "  __PACKAGE__->load_components(qw/ $list /);\n";
+  }
   print $fh "  }\n";
   print $fh "  __PACKAGE__->resultset_class('$resultset_class');\n";
   print $fh "  $dbic_class->register_class( $moniker => __PACKAGE__ );\n";
@@ -617,7 +629,7 @@ Mesoderm - Schema class scaffold generator for DBIx::Class
 
 =head1 VERSION
 
-version 0.122290
+version 0.131260
 
 =head1 SYNOPSIS
 
@@ -786,6 +798,10 @@ Defaults to C<resultset_class_namespace> plus C<::Role>
 =head1 METHODS
 
 =over
+
+=item resultset_components ( $table )
+
+Returns a list of L<DBIx::Class> components to be loaded by the resultset class
 
 =item table_components ( $table )
 

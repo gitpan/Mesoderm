@@ -32,7 +32,7 @@ my %WriteMakefileArgs = (
     "Path::Class" => 0,
     "SQL::Translator" => "0.11008"
   },
-  "VERSION" => "0.122290",
+  "VERSION" => "0.131260",
   "test" => {
     "TESTS" => "t/*.t"
   }

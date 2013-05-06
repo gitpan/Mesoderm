@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.64.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,20 +14,20 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 1f4ea2bf136285e462419d27d1719a488fced4eb Changes
-SHA1 0433bbff935245e9752d7633fe7caea3ef6c8187 LICENSE
+SHA1 9ce2fc3536000560f4f1df8d3fd1058a46b20333 Changes
+SHA1 ead93d8c1ab4b2bc92807c424c5672c0889b2108 LICENSE
 SHA1 400184b660dfe44acfe5497f1d79290a73e4da83 MANIFEST
-SHA1 04dddafb34bd40db31dfc7fbc85df5d0535808d8 META.json
-SHA1 d07438fbd7ce985aec7802b58afe19059991a5fe META.yml
-SHA1 01db40da17a524a473b9e5397ed8d21275fd104a Makefile.PL
+SHA1 46846004695342c77eb542579ab5fb335d998d38 META.json
+SHA1 247a7aa5adad3bbb70da54a32e874843475a4c24 META.yml
+SHA1 f3c4a8f5a63d54b604088fd76866ba1178e59fed Makefile.PL
 SHA1 47696d3a8d5d37186a42b6eb857749660e6e4ee9 README.md
 SHA1 2f957afaa86feaed371efd196b4f89a836a67b73 bin/mesoderm
 SHA1 4cd54f769fd6db5e90f3114119d5238773edd497 dist.ini
-SHA1 a04e03c7af89f696e683f6ba16f22a4725045c23 lib/Mesoderm.pm
-SHA1 6c8d0100b0eb2ac9cc9ed07681b9ae906db821a5 lib/Mesoderm/Command.pm
-SHA1 d561ab19ff7f83fea1da7189cab49ea7a743957a lib/Mesoderm/Component.pm
-SHA1 d5d2366be20fab02dbd7ece8d4d4b677a4588975 lib/Mesoderm/Mapping.pm
-SHA1 b0f67c1e860d4e3f0194903101101a2bf8088ce7 lib/Mesoderm/Relationship.pm
+SHA1 d2d1d226bafe32fddae42b18c9cd28b45e1f9cdd lib/Mesoderm.pm
+SHA1 b85400177f6cf48988e92147fd947c087051961d lib/Mesoderm/Command.pm
+SHA1 09e40ccfe24e34e4501f4cddd38eabecc9236aab lib/Mesoderm/Component.pm
+SHA1 c02cb964cd0f0acc35d0789bfa6f9bb7f9bcafe4 lib/Mesoderm/Mapping.pm
+SHA1 047c1760102b2c6f368fb253a0c38f307d955c07 lib/Mesoderm/Relationship.pm
 SHA1 85630ed0a3557e8225527d7e86e374084b43844c t/tests.t
 SHA1 4625d336e4125e86d95ae00b098f8db8cd51b8cb t/tests/belongs_to.out
 SHA1 2d2c3ba2444fd8f8ce220bcfc567109c7ff172f3 t/tests/belongs_to.sql
@@ -38,7 +38,7 @@ SHA1 064a27fab5e336d512d250fb515649c2c6a53ff8 t/tests/might_have.sql
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
-iEYEARECAAYFAlAtemUACgkQR0BL4gbYw3R0xwCdEFbDQ1iq2YuTYsvYhNKGAX1w
-E2kAn14uq/m67+RQ2ZN2iP1Ld5/pfUe6
-=wfQl
+iEYEARECAAYFAlGHxvIACgkQR0BL4gbYw3TutQCfegDUxK99lClRopfjnn8w35o5
+z8kAnRg7SMNcNOvTYwI9zVO8vxkr8HC+
+=6eWa
 -----END PGP SIGNATURE-----
