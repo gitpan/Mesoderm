@@ -3,7 +3,7 @@
 
 package Mesoderm::Relationship;
 {
-  $Mesoderm::Relationship::VERSION = '0.131260';
+  $Mesoderm::Relationship::VERSION = '0.140780';
 }
 
 use Moose;

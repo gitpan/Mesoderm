@@ -3,7 +3,7 @@
 
 package Mesoderm::Mapping;
 {
-  $Mesoderm::Mapping::VERSION = '0.131260';
+  $Mesoderm::Mapping::VERSION = '0.140780';
 }
 
 use Moose;

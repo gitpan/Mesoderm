@@ -4,7 +4,7 @@
 
 package Mesoderm;
 {
-  $Mesoderm::VERSION = '0.131260';
+  $Mesoderm::VERSION = '0.140780';
 }
 use Moose;
 
@@ -629,7 +629,7 @@ Mesoderm - Schema class scaffold generator for DBIx::Class
 
 =head1 VERSION
 
-version 0.131260
+version 0.140780
 
 =head1 SYNOPSIS
 
